@@ -1,0 +1,25 @@
+#home-main, #me-main, #pain-main, #progress-main{
+    margin: 30px;
+    color: #e9f5f9;
+    font-size: 17pt;
+    font-family: congenial;
+}
+
+#languages, #course-progress{
+    padding-left: 55px;
+}
+
+#nav{
+    font-size: 19pt;
+}
+
+.navbar-brand{
+    font-size: 21pt;
+}
+body{
+    background-color: #041014
+}
+
+#cs50_link{
+    text-decoration: none
+}

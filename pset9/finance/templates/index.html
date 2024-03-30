@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <h3 style="color:white">{{ username }} your cash balance is {{ cash | usd }}</h3>
+    <h4 style="color:white">Your net worth is {{ net | usd }}</h4>
+
+    <table class="table table-dark table-striped">
+        <tr>
+            <th>Stocks</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total Value</th>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td>{{stock['stock']}}</td>
+            <td>{{stock['SUM(shares)']}}</td>
+            <td>{{lookup(stock['stock'])["price"] | usd}}</td>
+            <td>{{(lookup(stock['stock'])["price"] * stock['SUM(shares)']) | usd}}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <td><b>Grand Total</b></td>
+            <td><b>{{ total | usd }}</b></td>
+        </tr>
+    </table>
+
+{% endblock %}

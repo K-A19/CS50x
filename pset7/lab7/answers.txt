@@ -1,0 +1,4 @@
+Spotify could have found the average of the three categories of average energy, valence and danceability.
+
+On the other hand this means multiple very different songs could lead to the same average even with different moods as the categories were not weighted.
+ANother alternative is putting songs into moods/auras depending on the ratio between the three categories used to asses each song.

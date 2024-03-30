@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It sorts fastest on already sorted arrays due do it having a big Omega of n with a lower bound on order of n steps.
+
+sort2 uses: Merge Sort
+
+How do you know?: It sorts fasted on random unordered arrays due to it having a big O of nlogn with an upper boung on order of nlogn steps.
+
+sort3 uses: Selection sort
+
+How do you know?: It sorts slowest on already sorted arrays of numbers due to it having a big Omega of n^2 with a lower bound on order of n^2 steps.

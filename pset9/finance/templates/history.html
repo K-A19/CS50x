@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %} History {% endblock %}
+
+{% block main %}
+
+    <table class="table table-dark table-striped">
+        <tr>
+            <th>Transaction Type</th>
+            <th>Stock</th>
+            <th>Price</th>
+            <th>Shares</th>
+            <th>Time</th>
+        </tr>
+        {% for record in history %}
+        <tr>
+            <td>{{record['type']}}</td>
+            <td>{{record['stock']}}</td>
+            <td>{{record['price']}}</td>
+            <td>{{record['shares']}}</td>
+            <td>{{record['time']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

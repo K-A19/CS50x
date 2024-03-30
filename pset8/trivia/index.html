@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="answers.js"></script>
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What colour can't blue birds see? </h3>
+                <p><h4 id= 'status'> Correct!</h4></p>
+                <form id= 'f1'>
+                    <button id="red" type="button"> Red </button>
+                    <button id="green" type="button"> Green </button>
+                    <button id="blue" type="button"> Blue </button>
+                    <button id="yellow"type="button"> Yellow </button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Who is the current president of America?</h3>
+                <h4>(Name and surname with proper capitilization e.g 'Barack Obama')</h4>
+                <p><h4 id= 'status2'> Correct!</h4></p>
+                <form id='f2'>
+                    <input id= 'answer' type='text' placeholder='Name' autocomplete='off'>
+                    <button type='submit'>Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
